@@ -1,0 +1,18 @@
+.anime.title {
+	color: green;
+	border: 2px dotted black;
+	width: 200px;
+	text-align: center;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.anime.title:hover{
+	color: red;
+	background-color: dimgrey;
+}
+
+.anime.title:active{
+	color: yellow;
