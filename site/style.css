@@ -1,8 +1,11 @@
 .anime.title {
-	color: green;
+	color: #8040ff;
 	border: 2px dotted black;
 	width: 200px;
 	text-align: center;
+	font-family: Helvetica, sans-serif;
+	text-transform: uppercase;
+
 }
 
 .blue {
@@ -16,3 +19,4 @@
 
 .anime.title:active{
 	color: yellow;
+
