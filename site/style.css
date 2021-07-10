@@ -1,24 +1,31 @@
+#NonNonBiyori .thumbnail{
+	background: url(https://i.imgur.com/0YwV2cv.jpg);
+	background-position: center;
+	background-size: 100%;
+}
+
+#NonNonBiyori .title{
+	background: url(http://38.media.tumblr.com/9d5129da07874adf44e7b90ffc18da94/tumblr_n3mw05Axk91s4cujlo1_500.gif);
+	background-position: center;
+	background-size: 180%;
+}
+
+
+@media (min-width: 427px) {
 body{
 	background-color: deeppink;
-	margin-top: 50px;
-	height: 100%; 
-	overflow: hidden;
-	width: 70%;
+	margin-left: 1%;
+	height: 100%;
+	overflow-x: hidden; 
+	overflow-y: hidden;
 }
+
 
 #webname {
 	color: white;
 	margin-left: 50px;
 }
 
-#disc {
-	position: absolute;
-	top: -50px;
-	right: -300px;
-	height: 1050px;
-	width: 1050px;
-	-webkit-animation: rotating 15s linear infinite;
-}
 
 .thumbnail{
 	position: relative;
@@ -50,18 +57,6 @@ body{
 	z-index: -1;
 }
 
-#NonNonBiyori .thumbnail{
-	background: url(https://i.imgur.com/0YwV2cv.jpg);
-	background-position: center;
-	background-size: 100%;
-}
-
-#NonNonBiyori .title{
-	background: url(http://38.media.tumblr.com/9d5129da07874adf44e7b90ffc18da94/tumblr_n3mw05Axk91s4cujlo1_500.gif);
-	background-position: center;
-	background-size: 180%;
-}
-
 a:hover .thumbnail, a:hover .title{
 	-webkit-animation: rotatingY 3s linear infinite;
 }
@@ -74,6 +69,96 @@ a, a:link{
 	margin-bottom: 30px;
 	height: 206px;
 }
+
+#disc {
+	position: absolute;
+	top: -50px;
+	right: -500px;
+	height: 1050px;
+	width: 1050px;
+	z-index: -1;
+	-webkit-animation: rotating 15s linear infinite;
+
+}
+}
+
+
+@media (max-width: 426px) {
+
+body {
+	background-color: deeppink;
+	overflow: hidden;
+}
+
+
+#webname {
+	color: white;
+	margin-left: 50px;
+}
+
+
+.thumbnail{
+	position: relative;
+	background-color: deeppink;
+	border: 3px solid pink;
+	border-radius: 100%;
+	object-fit: cover;
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	margin-left: auto;
+	margin-right: auto;
+	transition: transform 1s;
+	-webkit-backface-visibility: hidden;
+  	backface-visibility: hidden;
+  	z-index: 1;
+}
+
+
+.title{
+	position: relative;
+	background-color: deeppink;
+	border: 3px solid pink;
+	border-radius: 100%;
+	object-fit: cover;
+	width: 150px;
+	height: 150px;
+	top: -155px;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a:hover .thumbnail, a:hover .title{
+	-webkit-animation: rotatingY 3s linear infinite;
+}
+
+a, a:link{
+	float: left;
+	width: 50%;
+	text-decoration: none;
+	height: 206px;
+}
+
+#webname {
+	visibility: hidden;
+}
+
+#disc {
+	position: absolute;
+	top: -250px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 400px;
+	width: 400px;
+	-webkit-animation: rotating 15s linear infinite;
+}
+
+
+}
+
 
 @-webkit-keyframes rotating {
     from{
