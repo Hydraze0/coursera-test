@@ -1,3 +1,35 @@
+.thumbnail{
+	position: relative;
+	background-color: deeppink;
+	border: 3px solid pink;
+	border-radius: 100%;
+	object-fit: cover;
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-backface-visibility: hidden;
+}
+
+
+.title{
+	position: relative;
+	background-color: deeppink;
+	border: 3px solid pink;
+	border-radius: 100%;
+	object-fit: cover;
+	width: 150px;
+	height: 150px;
+	top: -155px;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
 #NonNonBiyori .thumbnail{
 	background: url(https://i.imgur.com/0YwV2cv.jpg);
 	background-position: center;
@@ -10,6 +42,11 @@
 	background-size: 180%;
 }
 
+#FlyingWitch .thumbnail{
+	background: url(https://i.imgur.com/JX5hlSY.jpeg);
+	background-position: center;
+	background-size: 100%;
+}
 
 @media (min-width: 427px) {
 body{
@@ -78,8 +115,6 @@ a, a:link{
 	width: 1050px;
 	z-index: -1;
 	-webkit-animation: rotating 15s linear infinite;
-
-}
 }
 
 
@@ -96,40 +131,6 @@ body {
 	margin-left: 50px;
 }
 
-
-.thumbnail{
-	position: relative;
-	background-color: deeppink;
-	border: 3px solid pink;
-	border-radius: 100%;
-	object-fit: cover;
-	width: 150px;
-	height: 150px;
-	text-align: center;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	margin-left: auto;
-	margin-right: auto;
-	transition: transform 1s;
-	-webkit-backface-visibility: hidden;
-  	backface-visibility: hidden;
-  	z-index: 1;
-}
-
-
-.title{
-	position: relative;
-	background-color: deeppink;
-	border: 3px solid pink;
-	border-radius: 100%;
-	object-fit: cover;
-	width: 150px;
-	height: 150px;
-	top: -155px;
-	text-align: center;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	margin-left: auto;
-	margin-right: auto;
-}
 
 a:hover .thumbnail, a:hover .title{
 	-webkit-animation: rotatingY 3s linear infinite;
